@@ -1,0 +1,118 @@
+:focus {
+  outline-style: dotted;
+  outline-width: thick;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: calc(1em + 1vh + 2vh);
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.333em;
+  margin-block-start: 3vh;
+  margin-block-end: 5vh;
+  padding: 1em;
+  padding-inline: calc(1em + 2vw);
+  flex-basis: 38%;
+}
+
+footer {
+  font-size: 1.333em;
+  margin-block-start: 3vh;
+  margin-block-end: 5vh;
+  padding: 1em;
+  padding-inline: calc(1em + 2vw);
+  flex-basis: 38%;
+}
+
+dl {
+  font-family: monospace;
+  line-height: 2;
+  margin: 0;
+  padding: 1em;
+  padding-block: 2em;
+  padding-inline: calc(1em + 2vw);
+  flex-basis: 100%;
+  order: -1;
+}
+
+dt {
+  display: inline;
+  margin: 0;
+}
+
+dt::before {
+  display: block;
+  content: "";
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  display: inline;
+  margin: 0;
+}
+
+[hidden] {
+  font-weight: bold;
+  display: none;
+}
+
+@media (hover:none) {
+  [data-hover=none] {
+    display: inline;
+  }
+}
+
+@media (hover:hover) {
+  [data-hover=hover] {
+    display: inline;
+  }
+}
+
+@media (orientation:portrait) {
+  [data-orientation=portrait] {
+    display: inline;
+  }
+}
+
+@media (orientation:landscape) {
+  [data-orientation=landscape] {
+    display: inline;
+  }
+}
+
+@media (pointer:none) {
+  [data-pointer=none] {
+    display: inline;
+  }
+}
+
+@media (pointer:coarse) {
+  [data-pointer=coarse] {
+    display: inline;
+  }
+}
+
+@media (pointer:fine) {
+  [data-pointer=fine] {
+    display: inline;
+  }
+}

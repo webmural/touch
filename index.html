@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="utf-8">
+<title>next level media query laboratory</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name=color-scheme content="dark">
+<meta name=theme-color content="black">
+<meta name="description" content="detect active media queries in your web browser">
+<link rel="stylesheet" href="color.css" media=(color)>
+<link rel="stylesheet" href="media.css">
+<link rel="help" href="https://mdn.io/mathml">
+
+<main>
+  <header id="browser" aria-label="browser">
+    <a href="#current" class="spill">these</a> are current
+    <a href="https://webmural.com/css">CSS</a>
+    media features in your browser
+  </header>
+  <dl id="current" aria-label="current">
+    <dt id=hover>hover</dt>
+    <dd hidden data-hover=none>none</dd>
+    <dd hidden data-hover=hover>hover</dd>
+    <dt id=orientation>orientation</dt>
+    <dd hidden data-orientation=portrait>portrait</dd>
+    <dd hidden data-orientation=landscape>landscape</dd>
+    <dt id=pointer>pointer</dt>
+    <dd hidden data-pointer=none>none</dd>
+    <dd hidden data-pointer=coarse>coarse</dd>
+    <dd hidden data-pointer=fine>fine</dd>
+  </dl>
+  <footer aria-label="respect">
+    <a href="https://mdn.io/media-queries">media queries</a>
+    help coders respect your interface preferences
+  </footer>
+</main>

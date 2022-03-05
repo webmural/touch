@@ -1,0 +1,42 @@
+::selection {
+  background: midnightblue;
+  color: orangered;
+}
+
+:root {
+  --sludge: indigo;
+  --slime: darkturquoise;
+  background: var(--sludge);
+  color: var(--slime);
+}
+
+a {
+  transition: 30ms ease-out;
+}
+
+dl {
+  color: var(--sludge);
+  background: var(--slime);
+}
+
+:link {
+  color: coral;
+}
+
+:visited {
+  color: salmon;
+}
+
+:any-link:hover {
+  color: orange;
+}
+
+.spill:active {
+  box-shadow: 0 -5em 5em 8em orangered;
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --slime: palegreen;
+  }
+}
